@@ -45,9 +45,9 @@ def topView(root):
     result = {}
     
     while len(nodes):
-        item = nodes.pop(0)
-        hd = item[1]
-        t = item[0]        
+        tupleItem = nodes.pop(0)
+        hd = tupleItem[1]
+        t = tupleItem[0]        
         if hd not in result.keys():
             result[hd] = t.info
         if t.left:
