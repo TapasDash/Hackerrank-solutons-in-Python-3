@@ -51,7 +51,7 @@ def topView(root):
         if hd not in result.keys():
             result[hd] = t.info
         if t.left:
-            nodes.insert(0,(t.left,hd-1))
+            nodes.append((t.left,hd-1))
         if t.right:
             nodes.append((t.right,hd+1))
     for key in sorted(result): 
